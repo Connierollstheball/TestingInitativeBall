@@ -1,0 +1,132 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         type = "Beginner";
+         goldTime = "5000";
+         time = "0";
+         desc = "Explod The Nuuk (Not The City) To Get Up";
+         name = "Test Chamber #5";
+         level = "5";
+         artist = "Alex Swanson";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 -1.73483e+009 -1.73483e+009";
+      fogVolume2 = "-1 -1.73483e+009 -1.73483e+009";
+      fogVolume3 = "-1 -1.73483e+009 -1.73483e+009";
+      materialList = "~/data/skies/sky_day.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 -1734829824.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 -1734829824.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 -1734829824.000000";
+   };
+   new Sun() {
+      direction = "0.701976 -0.52137 -0.485184";
+      color = "1.400000 1.200000 0.400000 1.000000";
+      ambient = "0.300000 0.300000 0.400000 1.000000";
+   };
+   new ScriptObject() {
+         pad = "1532";
+         time = "0";
+         bonusTime = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "0.928866 -5.50422 0.41383";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad";
+   };
+   new ScriptObject() {
+         pad = "1534";
+         time = "0";
+         bonusTime = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+   };
+   new ScriptObject() {
+         pad = "1833";
+         time = "0";
+         bonusTime = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+   };
+   new ScriptObject() {
+         pad = "1802";
+         time = "0";
+         bonusTime = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+   };
+   new ScriptObject() {
+         pad = "1871";
+         time = "0";
+         bonusTime = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+   };
+   new StaticShape() {
+      position = "0.979145 7.23559 0.434919";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "Nuuk";
+         resetTime = "Default";
+   };
+   new InteriorInstance() {
+      position = "-11.0114 23.0567 0.460241";
+      rotation = "1 0 0 0";
+      scale = "3.90462 4.91015 1";
+      interiorFile = "~/data/interiors/advanced/trapdoor.dif";
+      showTerrainInside = "0";
+   };
+   new AudioProfile(MusicProfile) {
+      fileName = "~/data/sound/Shell.ogg";
+      description = "AudioMusic";
+      preload = "0";
+   };
+   new Item() {
+      position = "0.989934 7.16105 9.21088";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape(EndPoint) {
+      position = "1.80694 20.4173 0.343564";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad";
+   };
+};
+//--- OBJECT WRITE END ---

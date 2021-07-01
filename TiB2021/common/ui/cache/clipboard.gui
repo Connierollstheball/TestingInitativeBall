@@ -1,0 +1,20 @@
+new SimSet(guiClipboard) {
+
+   new GuiBitmapButtonCtrl(OptGfx1024768) {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "320 -1";
+      extent = "94 51";
+      minExtent = "8 8";
+      visible = "1";
+      command = "OptGraphicsPane.setResolution(\"1024 768\");";
+      helpTag = "0";
+      text = "OK";
+      groupNum = "0";
+      buttonType = "RadioButton";
+      repeatPeriod = "1000";
+      repeatDecay = "1";
+      bitmap = "marble/client/ui/Options/graf1024";
+   };
+};

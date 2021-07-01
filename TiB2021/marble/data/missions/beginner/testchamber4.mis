@@ -1,0 +1,1025 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         type = "Beginner";
+         desc = "Dont The Crash Ur Game";
+         level = "4";
+         name = "Test Chamber #4";
+         time = "0";
+         goldTime = "5000";
+         artist = "Alex Swanson";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 -1.73483e+009 -1.73483e+009";
+      fogVolume2 = "-1 -1.73483e+009 -1.73483e+009";
+      fogVolume3 = "-1 -1.73483e+009 -1.73483e+009";
+      materialList = "~/data/skies/sky_day.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 -1734829824.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 -1734829824.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 -1734829824.000000";
+   };
+   new Sun() {
+      direction = "0.701976 -0.52137 -0.485184";
+      color = "1.400000 1.200000 0.400000 1.000000";
+      ambient = "0.300000 0.300000 0.400000 1.000000";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1532";
+         time = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "0.928866 -5.50422 0.41383";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1534";
+         time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1833";
+         time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1802";
+         time = "0";
+   };
+   new ScriptObject() {
+         bonusTime = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1871";
+         time = "0";
+   };
+   new Item() {
+      position = "2.0899 8.1956 0.470287";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "-11.0114 23.0567 0.460241";
+      rotation = "1 0 0 0";
+      scale = "3.90462 4.91015 1";
+      interiorFile = "~/data/interiors/advanced/trapdoor.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "0.989934 7.16105 3.88383";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.27937 6.23467 0.478527";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.326272 6.31611 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.584797 6.12104 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.699274 6.05461 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.723514 6.04839 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.959808 5.92599 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.05022 5.89055 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.814509 6.01262 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.412287 6.30033 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.172958 6.53985 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-0.0698345 6.871 0.5388";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-0.196355 7.10505 0.574931";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-0.434792 7.93574 0.611027";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-0.435508 8.49006 0.599";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-0.391961 8.76448 0.562891";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-0.219507 9.27875 0.514698";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-0.0304568 9.61579 0.502643";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.300655 10.0152 0.502643";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.615686 10.2784 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.883095 10.4425 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.3059 10.6197 0.478526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.8498 10.7259 0.514698";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.45223 10.7045 0.514698";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.839 10.6114 0.52675";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.03104 10.5402 0.52675";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.395 10.352 0.52675";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.82101 10.0165 0.52675";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.09651 9.69716 0.52675";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.28172 9.40055 0.52675";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.47285 8.9328 0.52675";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.57053 8.3636 0.550847";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.57221 8.11076 0.550847";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.51403 7.66919 0.5388";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.36486 7.21108 0.514698";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.14388 6.81058 0.514698";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.95246 6.5627 0.514698";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.71391 6.32425 0.502643";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.3118 6.03766 0.490586";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.88406 5.84259 0.466466";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.66436 5.77766 0.466466";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.22365 5.70967 0.466466";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.64601 5.73906 0.466466";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.12404 5.88577 0.466466";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.645624 6.14089 0.466466";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.22436 6.50137 0.454404";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.452716 7.73914 0.502643";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.95141 8.18752 0.502643";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "5.41608 6.9272 0.418212";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "8.64435 10.2848 0.550847";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "8.25943 11.7743 0.5388";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.08271 15.2175 0.611027";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.43131 14.9073 0.647082";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.89491 10.6807 0.737567";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.21248 9.4254 0.769474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-1.06951 9.63149 0.611027";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.383477 7.78347 0.730208";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.01064 8.11829 0.727466";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.35096 9.463 0.70204";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.521956 7.69136 0.540973";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.71525 5.70238 0.569018";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.3081 9.53224 0.687346";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.10305 5.95978 0.634766";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-0.050143 6.81248 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.850014 7.8608 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.80856 8.68617 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.96844 7.13528 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.569 6.89135 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.66971 7.36895 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.60047 7.30084 0.36596";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.26865 8.08685 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.63407 8.90258 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.44658 8.63226 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.15239 9.49463 0.627745";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.29213 9.60147 0.734527";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.19416 9.49464 1.01806";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.60306 8.26434 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.7272 7.66288 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.61158 7.68096 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.98499 6.99848 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.773317 6.88431 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.02151 6.89468 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.36502 7.26375 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.6023 7.71243 0.460241";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.02065 8.23552 0.699535";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.80171 8.41638 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.07801 8.67696 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.00149 8.59931 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.98628 8.25676 0.334091";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.31071 7.83858 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.28024 7.69253 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.29578 7.21261 0.459424";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.42065 7.49773 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1.65796 7.59462 0.427534";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.59765 7.649 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.31557 8.58004 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.48408 8.34914 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.82996 8.49057 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.70482 8.65415 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.21464 8.69189 0.208751";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "RuntimeErrorItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new AudioProfile(MusicProfile) {
+      fileName = "~/data/sound/Shell.ogg";
+      description = "AudioMusic";
+      preload = "0";
+   };
+   new StaticShape(EndPoint) {
+      position = "2.95403 20.0028 0.62881";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad";
+   };
+};
+//--- OBJECT WRITE END ---

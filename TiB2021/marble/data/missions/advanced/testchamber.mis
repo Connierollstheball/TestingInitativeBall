@@ -1,0 +1,168 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         type = "advanced";
+         time = "0";
+         artist = "Alex Swanson";
+         desc = "Learn The Sun";
+         goldTime = "17000";
+         level = "1";
+         startHelpText = "P.S.:This Will Be Added In The Full Version at Test Series #2!";
+         name = "Test Chamber ";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 7.45949e-031 1.3684e-038";
+      fogVolume2 = "-1 1.07208e-014 8.756e-014";
+      fogVolume3 = "-1 5.1012e-010 2.05098e-008";
+      materialList = "~/data/skies/sky_day.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000004";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 14435505.000000";
+   };
+   new Sun() {
+      direction = "0.514393 0.603723 -0.609031";
+      color = "1.400000 1.200000 0.400000 1.000000";
+      ambient = "0.300000 0.300000 0.400000 1.000000";
+   };
+   new ScriptObject() {
+         time = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1673";
+         bonusTime = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "21.6043 -113.765 6.79253";
+      rotation = "1 0 0 50";
+      scale = "1 1 1";
+      dataBlock = "StartPad";
+   };
+   new ScriptObject() {
+         time = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "2154";
+         bonusTime = "0";
+   };
+   new InteriorInstance() {
+      position = "28.3098 -91.5104 1.439";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/training_tornado.dif";
+      showTerrainInside = "0";
+   };
+   new ScriptObject() {
+         time = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1698";
+         bonusTime = "0";
+   };
+   new ScriptObject() {
+         time = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1808";
+         bonusTime = "0";
+   };
+   new ScriptObject() {
+         time = "0";
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1934";
+         bonusTime = "0";
+   };
+   new StaticShape() {
+      position = "27.2507 -87.5923 -3.63427";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Sun";
+   };
+   new StaticShape() {
+      position = "25.1267 -92.4628 -3.4856";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EARTH";
+   };
+   new Item() {
+      position = "47.1884 -81.6862 6.41903";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItemMatan";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape(EndPoint) {
+      position = "59.4539 -91.395 -0.00849798";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad";
+   };
+   new AudioProfile(MusicProfile) {
+      fileName = "~/data/sound/Shell.ogg";
+      description = "AudioMusic";
+      preload = "0";
+   };
+   new StaticShape() {
+      position = "-4.99066 -88.1068 8.28082";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "BLACKHOLE";
+   };
+   new StaticShape() {
+      position = "-5.63107 -89.3852 8.25797";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "BLACKHOLE";
+   };
+   new StaticShape() {
+      position = "-5.27921 -91.4133 8.25339";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "BLACKHOLE";
+   };
+   new StaticShape() {
+      position = "-5.38055 -93.3165 8.25759";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "BLACKHOLE";
+   };
+   new StaticShape() {
+      position = "-4.07859 -94.357 8.25876";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "BLACKHOLE";
+   };
+};
+//--- OBJECT WRITE END ---

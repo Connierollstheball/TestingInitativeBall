@@ -1,0 +1,145 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         artist = "Alex Swanson";
+         level = "2";
+         type = "Beginner";
+         goldTime = "5000";
+         startHelpText = "Avoid The Black Hole Hazard That Says \"Cum\"";
+         time = "0";
+         name = "Test Chamber #2";
+         desc = "Learn About BLCAKHOLE!!!!";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 -1.73483e+009 -1.73483e+009";
+      fogVolume2 = "-1 -1.73483e+009 -1.73483e+009";
+      fogVolume3 = "-1 -1.73483e+009 -1.73483e+009";
+      materialList = "~/data/skies/sky_day.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 -1734829824.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 -1734829824.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 -1734829824.000000";
+   };
+   new Sun() {
+      direction = "0.701976 -0.52137 -0.485184";
+      color = "1.400000 1.200000 0.400000 1.000000";
+      ambient = "0.300000 0.300000 0.400000 1.000000";
+   };
+   new StaticShape() {
+      position = "-0.419813 -15.438 -3.93004";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "BLACKHOLE";
+   };
+   new StaticShape(StartPoint) {
+      position = "-2.15841 -7.03169 -4.23488";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad";
+   };
+   new InteriorInstance() {
+      position = "11.2283 -13.7311 -4.1686";
+      rotation = "1 0 0 0";
+      scale = "1.5 1.5 1.5";
+      interiorFile = "~/data/interiors/frictionbounce.dif";
+      showTerrainInside = "0";
+   };
+   new ScriptObject() {
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1871";
+         time = "0";
+         bonusTime = "0";
+   };
+   new ScriptObject() {
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1802";
+         time = "0";
+         bonusTime = "0";
+   };
+   new StaticShape(EndPoint) {
+      position = "11.3846 1.15829 15.2314";
+      rotation = "0 0 1 179.518";
+      scale = "1 1 1";
+      dataBlock = "EndPad";
+   };
+   new ScriptObject() {
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1833";
+         time = "0";
+         bonusTime = "0";
+   };
+   new ScriptObject() {
+         gemCount = "0";
+         penaltyTime = "0";
+         powerUp = "0";
+         pad = "1603";
+         time = "0";
+         bonusTime = "0";
+   };
+   new StaticShape() {
+      position = "-32.3707 -15.4286 2.10414";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "BLACKHOLE";
+   };
+   new StaticShape() {
+      position = "-10.0907 3.91743 10.2608";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "BLACKHOLE";
+   };
+   new Item() {
+      position = "-25.5328 0.652202 1.984";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperBounceItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new AudioProfile(MusicProfile) {
+      fileName = "~/data/sound/Shell.ogg";
+      description = "AudioMusic";
+      preload = "0";
+   };
+   new Item() {
+      position = "0.0673555 0.598126 5.05525";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+};
+//--- OBJECT WRITE END ---
