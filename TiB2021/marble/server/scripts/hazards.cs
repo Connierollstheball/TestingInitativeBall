@@ -607,8 +607,6 @@ function Nuuk::onCollision(%this, %obj, %col)
 
 //------------------------------------------------------------------------------------
 
-//-----------------------------------------------------------------------------
-
 datablock AudioProfile(BLACKHOLESfx)
 {
    filename    = "~/data/sound/Tfornado.wav";
@@ -645,8 +643,6 @@ function BLACKHOLE::onAdd(%this,%obj)
    %obj.playAudio(0,BLACKHOLESfx);
    %obj.setPoweredState(true);
 }
-
-//-----------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------
 
@@ -689,8 +685,6 @@ function SUN::onAdd(%this,%obj)
 
 //-----------------------------------------------------------------------------
 
-//-----------------------------------------------------------------------------
-
 datablock AudioProfile(EARTHSfx)
 {
    filename    = "~/data/sound/TfornSEARTHUNado.wav";
@@ -729,3 +723,44 @@ function EARTH::onAdd(%this,%obj)
 }
 
 //-----------------------------------------------------------------------------
+
+datablock AudioProfile(PushMarbleSfx)
+{
+   filename    = "~/data/sound/forcefield.wav";
+   description = AudioClosestLooping3d;
+   preload = true;
+};
+
+datablock StaticShapeData(PushMarble)
+{
+   category = "Hazards";
+   shapeFile = "~/data/shapes/images/glow_bounce.dts";
+   scopeAlways = true;
+  
+
+   // Pull the marble in
+   forceType[0] = Spherical;  // Force type {Spherical, Field, Cone}
+   forceStrength[0] = 99;     // Force to apply
+   forceRadius[0] = 8;       // Max radius
+
+   // Counter sphere to slow the marble down near the center
+   forceType[1] = Spherical;
+   forceStrength[1] = 60;
+   forceRadius[1] = 3;
+
+   // Field to shoot the marble up
+   forceType[2] = Field;
+   forceVector[2] = "0 0 1";
+   forceStrength[2] = 250;
+   forceRadius[2] = 3;
+};
+
+function PushMarble::onAdd(%this,%obj)
+{
+   %obj.playThread(0,"ambient");
+   %obj.playAudio(0,PushMarbleSfx);
+   %obj.setPoweredState(true);
+}
+
+//-----------------------------------------------------------------------------
+
